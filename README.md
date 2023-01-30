@@ -20,7 +20,7 @@
 - clone repo
 - navigate to root folder
 - pip install -r requirements.txt
-- sqlite database and migrations are not added in .gitignore so that you can see dummy data(to process fast)
+- sqlite database and migrations are not added in .gitignore so that you can see dummy data(to make it fast)
 
 
 # Flow
@@ -32,3 +32,9 @@
 - to check  article list go to http://localhost:8000/articles/,http://localhost:8000/articles/hi/(for hindi language)
 - In case you want to add support for new language
   go to core/constants/LanguageChoice and add support for new language
+
+# Screenshots
+<img src="screenshots/1.png" height="200"> <br>
+<img src="screenshots/2.png" height="200"><br>
+<img src="screenshots/3.png" height="200"><br>
+<img src="screenshots/4.png" height="200"><br>
