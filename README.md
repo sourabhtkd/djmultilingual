@@ -34,7 +34,7 @@
   go to core/constants/LanguageChoice and add support for new language
 
 # Screenshots
-<img src="screenshots/1.png" height="200"> <br>
-<img src="screenshots/2.png" height="200"><br>
-<img src="screenshots/3.png" height="200"><br>
-<img src="screenshots/4.png" height="200"><br>
+![Alt text](screenshots/1.png?raw=true "")<br>
+![Alt text](screenshots/2.png?raw=true "")<br>
+![Alt text](screenshots/3.png?raw=true "")<br>
+![Alt text](screenshots/4.png?raw=true "")<br>
