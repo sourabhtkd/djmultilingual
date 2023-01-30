@@ -1,6 +1,7 @@
 # Tasks
  - Create Multilingual Blog application to store articles
  - Addition/removal of new language should not require schema change
+ - Implement Tree in Django
 
 
 # Assumptions
@@ -23,7 +24,7 @@
 - sqlite database and migrations are not added in .gitignore so that you can see dummy data(to make it fast)
 
 
-# Flow
+# Flow of Article
 - Run application :- python manage.py runserver
 - go to http://localhost:8000/admin
 - Login to admin panel, **username**-admin,**password**-admin
@@ -32,6 +33,14 @@
 - to check  article list go to http://localhost:8000/articles/,http://localhost:8000/articles/hi/(for hindi language)
 - In case you want to add support for new language
   go to core/constants/LanguageChoice and add support for new language
+
+
+# Flow of Tree
+- have just implemented model structure not the whole flow
+- we can use self referencing foreign keys with value depth and parent
+- depth can be used to query n levels above/below the current node in one shot without recursion
+
+
 
 # Screenshots
 ![Alt text](screenshots/1.png?raw=true "")<br>

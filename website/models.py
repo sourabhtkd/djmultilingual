@@ -36,3 +36,10 @@ class Article(AbstractArticle):
 
         if self.lang == LanguageChoice.get_default() and self.parent:
             raise ValidationError('Article in default language has already been provided')
+
+
+class Node(models.Model):
+    some_text = models.CharField(max_length=255)
+    parent = models.ForeignKey('self', blank=True, null=True, on_delete=models.CASCADE)
+    depth = models.PositiveIntegerField(default=0)
+
