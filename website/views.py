@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import render
 # Create your views here.
 from django.views.generic import ListView
@@ -12,5 +13,8 @@ class ArticleListView(ListView):
     context_object_name = 'articles'
 
     def get_queryset(self):
-        lang = self.kwargs.get('lang') or LanguageChoice.get_default()
+        lang = self.kwargs.get('lang')
+        # we can create separate function for this task
+        if not lang or lang.lower() not in LanguageChoice.get_enabled_languages():
+            lang = LanguageChoice.get_default()
         return website_models.Article.objects.filter(lang__iexact=lang)

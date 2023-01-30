@@ -14,3 +14,9 @@ class LanguageChoice:
     @staticmethod
     def get_default():
         return LanguageChoice.ENGLISH
+
+    @staticmethod
+    def get_enabled_languages():
+        return [LanguageChoice.ENGLISH,
+                LanguageChoice.HINDI
+                ]
