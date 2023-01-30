@@ -1,0 +1,4 @@
+*.pyc
+.idea
+core/__pycache__
+website/__pycache__
